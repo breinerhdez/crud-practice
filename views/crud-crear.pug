@@ -1,0 +1,12 @@
+extends layout.pug
+
+block content
+    h1 CRUD CREAR
+
+    form(method="post" action="/crud/almacenar")
+        div(class="form-group")
+            label(for="nombreU") Nombre
+            input(name="nombre" id="nombreU" placeholder="Nombre" class="form-control" required)
+
+        div
+            button(type="submit" class="btn btn-primary") Guardar
